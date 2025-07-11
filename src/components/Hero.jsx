@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Section from './Section'
 import curve from '../assets/hero/curve.png'
 import Button from './Button'
 import robot from '../assets/hero/robot.jpg'
 import heroBG from '../assets/hero/hero-background.jpg'
+import { BackgroundCircles, BottomLine, Gradient } from './design/Hero';
+import { heroIcons } from '../constants/index'
+import { ScrollParallax } from 'react-just-parallax'
 
 const Hero = () => {
+
+    const parallaxRef = useRef(null);
+
   return (
     <Section className="pt-[12rem] -mt-[5.25rem]"
     crosses
@@ -13,11 +19,11 @@ const Hero = () => {
     customPaddings
     id="hero"
     >
-      <div className='container relative'>
+      <div className='container relative' ref={parallaxRef}>
         <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem]
         md:mb-20 lg:mb-[6rem]'>
-            <h1 className="h1 mb-6 mt-3">Explore the Possibilities of AI Chatting with Brainwave
-            <span className='inline-block relative'> Brainwave
+            <h1 className="h1 mb-6 mt-3">Explore the Possibilities of &nbsp;AI&nbsp;Chatting with {` `}
+            <span className='inline-block relative'>{` `}Brainwave
                 <img src={curve} 
                 className='absolute top-full left-0 w-full xl:-mt-2'
                 width={624}
@@ -48,8 +54,27 @@ const Hero = () => {
                         height={490}
                         alt='AI'
                         />
+
+                        <ScrollParallax isAbsolutelyPositioned>
+                            <ul className='hidden absolute -left-[5.5rem] bottom-[7.5rem]
+                            px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10
+                            rounded-2xl xl:flex'>
+                                {heroIcons.map((icon,index) => (
+                                    <li className='p-5' key={index}>
+                                        <img src={icon}
+                                        height={25}
+                                        width={24}
+                                        alt='icon'
+                                        />
+                                        </li>
+                                ))}
+                            </ul>
+
+                        </ScrollParallax>
+
                     </div>
                 </div>
+                <Gradient />
             </div>
             <div className='absolute -top-[54%] w-[234%] -translate-x-1/2 left-1/2
             md:-top-[46%]  md:w-[138%] lg:-top-[104%]'>
@@ -62,6 +87,7 @@ const Hero = () => {
 
                 />
             </div>
+            <BackgroundCircles />
         </div>
 
 
