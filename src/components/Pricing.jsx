@@ -17,7 +17,6 @@ const Pricing = () => {
             height={400}
           />
 
-          {/* small sphere in front */}
           <img
             src={smallSphere}
             alt="sphere"

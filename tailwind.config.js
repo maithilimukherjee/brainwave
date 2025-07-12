@@ -82,7 +82,6 @@ export default {
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
 
-      // 🪄 here's the animation magic
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
