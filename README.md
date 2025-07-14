@@ -1,12 +1,48 @@
-# React + Vite
+# Brainwave
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Brainwave**—a visually striking, production-grade landing page for a fictional AI company, designed to inspire and impress. Whether you're looking to kickstart your next project or explore best practices in modern React and Tailwind CSS development, Brainwave is your go-to starting point.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Tech Stack:** Built with React and styled using Tailwind CSS for rapid UI development and seamless responsiveness.
+- **Polished Design:** Clean, professional, and attractive UI that’s ready for real-world deployment or portfolio demonstration.
+- **Component-Based Architecture:** Well-structured, reusable React components for easy customization and scalability.
+- **Responsive & Accessible:** Fully responsive layouts that look great on any device, with accessibility best practices in mind.
+- **Production-Ready Workflow:** Follows best practices for deployment, performance, and maintainability.
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check out the deployed landing page here:  
+[https://brainwave-one-lilac.vercel.app](https://brainwave-one-lilac.vercel.app)
+
+## 🛠️ Getting Started
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/maithilimukherjee/brainwave.git
+   cd brainwave
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to see Brainwave in action!
+
+## 📦 Built With
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+
+Made by [@maithilimukherjee](https://github.com/maithilimukherjee)
